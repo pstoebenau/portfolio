@@ -10,25 +10,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="navbar">
+  <div class="navbar">
     <a href="#landing">Home</a>
-    <a href="#work">My Work</a>
-    <a href="http://pstoebenauresume.ml">Resume</a>
+    <a href="#work">Portfolio</a>
+    <a href="http://resume.pstoebenau.ml">Resume</a>
   </div>
   <section id="landing">
     <p id="big-name">PATRICK STOEBENAU</p>
     <p id="work-title">Full Stack Web Developer</p>
     <img class="background" src="img/stars.jpg" alt="stars">
   </section>
-  <div id="navbar-background"><div></div></div>
+  <div id="navbar-sticky">
+    <div class="navbar-background"></div>
+    <div class="navbar">
+      <a href="#landing">Home</a>
+      <a href="#work">Portfolio</a>
+      <a href="http://resume.pstoebenau.ml">Resume</a>
+    </div>
+  </div>
   <section id="tech">
-    <img src="img/frameworks.png" alt="frameworks">
-    <img src="img/mysql.svg" alt="mysql">
-    <img src="img/nodejs.png" alt="nodejs">
-    <img src="img/php.png" alt="php">
+    <img src="img/logos/frameworks.png" alt="frameworks">
+    <img src="img/logos/mysql.svg" alt="mysql">
+    <img src="img/logos/nodejs.png" alt="nodejs">
+    <img src="img/logos/php.png" alt="php">
   </section>
   <section id="work">
-    <!-- Filled dynamically -->
+    <p>Portfolio</p>
+    <div class="grid-container">
+      <!-- Filled dynamically -->
+      <template id="website-preview-template">
+        <div class="website-preview">
+          <img src="img/websites/bicbacboe.jpg" alt="">
+        </div>
+      </template>
+    </div>
   </section>
   <script src="js/index.js"></script>
 </body>

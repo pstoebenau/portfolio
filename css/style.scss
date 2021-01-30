@@ -13,9 +13,9 @@ a {
   color: #eee;
 }
 
-#navbar {
+.navbar {
+  position: absolute;
   display: flex;
-  position: fixed;
   align-items: center;
   justify-content: space-between;
   left: 50%;
@@ -27,13 +27,16 @@ a {
   z-index: 2;
 }
 
-#navbar-background {
+#navbar-sticky {
   position: sticky;
   top: 0;
 
-  div {
+  .navbar-background {
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: $navbarHeight;
     background-color: #111;
@@ -78,7 +81,9 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   height: $navbarHeight;
+  background-color: #111;
   z-index: 1;
 
   img {
@@ -88,5 +93,30 @@ a {
 }
 
 #work {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+
+  p {
+    color: #111;
+    font-size: 2rem;
+    margin: 0 0 50px 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+    gap: 50px;
+  
+    .website-preview {
+      img {
+        width: 100%;
+        box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
 }
