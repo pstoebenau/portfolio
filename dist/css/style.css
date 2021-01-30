@@ -1,8 +1,9 @@
-html, body {
-  background-color: #F7ECE1;
+html,
+body {
+  background-color: #f7ece1;
   color: #f4f3ee;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
   scroll-behavior: smooth;
 }
 
@@ -21,7 +22,7 @@ a {
   height: 100px;
   width: 50%;
   top: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   z-index: 2;
 }
 
@@ -57,8 +58,8 @@ a {
 }
 #landing p {
   z-index: 1;
-  font-family: "Source Code Pro", monospace;
-  margin: 10px 75px;
+  margin: 10px 20px;
+  text-align: center;
 }
 #landing #big-name {
   font-size: 5rem;
@@ -69,16 +70,19 @@ a {
 
 #tech {
   position: relative;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px;
   align-items: center;
   width: 100%;
   height: 100px;
   background-color: #111;
-  z-index: 1;
+  z-index: 2;
 }
 #tech img {
-  height: 80%;
+  object-fit: contain;
+  width: 90%;
+  max-height: 80%;
   z-index: inherit;
 }
 
@@ -87,12 +91,11 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0;
 }
 #work p {
   color: #111;
   font-size: 2rem;
-  margin: 0 0 50px 0;
+  margin: 50px 0;
 }
 #work .grid-container {
   display: grid;
@@ -100,10 +103,33 @@ a {
   grid-template-rows: 1fr 1fr;
   justify-items: stretch;
   gap: 50px;
+  margin-bottom: 50px;
 }
 #work .grid-container .website-preview img {
   width: 100%;
   box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3), 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  #big-name {
+    font-size: 3rem !important;
+  }
+
+  #work-title {
+    font-size: 1.5rem !important;
+  }
+
+  .grid-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
