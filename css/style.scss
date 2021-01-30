@@ -1,9 +1,10 @@
 $navbarHeight: 100px;
+$techbarHeight: 150px;
 
 html,
 body {
   background-color: #f7ece1;
-  color: #f4f3ee;
+  color: #111;
   margin: 0;
   // font-family: "Roboto", sans-serif;
   font-family: "Source Code Pro", monospace;
@@ -12,7 +13,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #eee;
+  color: #111;
 }
 
 .navbar {
@@ -27,6 +28,10 @@ a {
   top: 0;
   font-size: 2rem;
   z-index: 2;
+  
+  a {
+    color: #eee;
+  }
 }
 
 #navbar-sticky {
@@ -68,6 +73,7 @@ a {
     z-index: 1;
     margin: 10px 20px;
     text-align: center;
+    color: #f4f3ee;
   }
 
   #big-name {
@@ -86,9 +92,11 @@ a {
   grid-template-rows: $navbarHeight;
   align-items: center;
   width: 100%;
-  height: $navbarHeight;
+  height: 150px;
   background-color: #111;
   z-index: 2;
+  box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3),
+      0 10px 10px 0 rgba(0, 0, 0, 0.3);
 
   img {
     object-fit: contain;
@@ -124,6 +132,36 @@ a {
         box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3),
           0 10px 10px 0 rgba(0, 0, 0, 0.3);
       }
+    }
+  }
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - #{$navbarHeight});
+
+  #contact-info {
+    position: relative;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    h1 {
+      position: absolute;
+      top: 0;
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    a {
+      text-decoration: underline;
     }
   }
 }
