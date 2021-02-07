@@ -170,6 +170,11 @@ form textarea {
 #contact #contact-form input, #contact #contact-form textarea {
   box-sizing: border-box;
   width: 100%;
+  border-radius: 5px;
+}
+#contact #contact-form #submit-button {
+  margin: 15px 0;
+  background-color: #86d4a7;
 }
 
 @media screen and (max-width: 1000px) {
