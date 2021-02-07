@@ -1,5 +1,5 @@
 $navbarHeight: 100px;
-$techbarHeight: 150px;
+$techbarHeight: 100px;
 
 html,
 body {
@@ -14,6 +14,19 @@ body {
 a {
   text-decoration: none;
   color: #111;
+}
+
+form {
+  input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 12px;
+  }
+
+  textarea {
+    height: 200px;
+    padding: 10px 12px;
+  }
 }
 
 .navbar {
@@ -57,13 +70,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - #{$navbarHeight});
+  height: calc(100vh - #{$techbarHeight});
 
   .background {
     position: absolute;
     object-fit: cover;
-    // top: 50%;
-    // transform: translateY(-50%);
     width: 100%;
     height: 100%;
     filter: brightness(80%);
@@ -89,10 +100,10 @@ a {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: $navbarHeight;
+  grid-template-rows: 100%;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: $techbarHeight;
   background-color: #111;
   z-index: 2;
   box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.3),
@@ -138,30 +149,55 @@ a {
 
 #contact {
   display: flex;
-  justify-content: center;
-  height: calc(100vh - #{$navbarHeight});
+  flex-direction: column;
+  height: 100%;
+  min-height: calc(100vh - #{$navbarHeight});
+  
+  h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin: 50px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+  }
 
   #contact-info {
-    position: relative;
-    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+
+    #contact-info-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin: 0 0 25px 0;
+        font-size: 1.2rem;
+      }
+  
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    min-width: 300px;
+    margin-left: 50px;
 
-    h1 {
-      position: absolute;
-      top: 0;
-      font-weight: 600;
-      font-size: 2.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-    }
-
-    a {
-      text-decoration: underline;
+    input, textarea {
+      box-sizing: border-box;
+      width: 100%;
     }
   }
 }
@@ -189,6 +225,20 @@ a {
     flex-direction: column;
     align-items: center;
     width: 90%;
+  }
+
+  #contact {
+    .container {
+      flex-direction: column;
+    }
+
+    #contact-info {
+      margin: 0 10px;
+    }
+
+    #contact-form {
+      margin: 0 10px;
+    }
   }
 }
 

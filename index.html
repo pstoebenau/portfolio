@@ -15,6 +15,7 @@
     <a href="#landing">Home</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
+    <a href="resume.pstoebenau.ml">Resume</a>
   </div>
   <section id="landing">
     <p id="big-name">PATRICK STOEBENAU</p>
@@ -27,6 +28,7 @@
       <a href="#landing">Home</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
+      <a href="resume.pstoebenau.ml">Resume</a>
     </div>
   </div>
   <section id="tech">
@@ -49,18 +51,32 @@
     </div>
   </section>
   <section id="contact">
-    <div id="contact-info">
-      <h1>Let's Get in Touch</h1>
-      <p>Name: Patrick Stoebenau</p>
-      <p>Email: <a href="mailto:pstoebenau@knights.ucf.edu">pstoebenau@knights.ucf.edu</a></p>
-      <p>Phone: <a href="tel:+1-407-406-7925">(407)-406-7925</a></p>
-      <p>Github: <a href="https://github.com/pstoebenau">github.com/pstoebenau</a></p>
-      <p>Gitlab: <a href="https://gitlab.com/pstoebenau">gitlab.com/pstoebenau</a></p>
-      <p>Resume: <a href="https://resume.pstoebenau.ml">resume.pstoebenau.ml</a></p>
+    <h1>Let's Get in Touch</h1>
+    <div class="container">
+      <div id="contact-info">
+        <div id="contact-info-details">
+          <p>Name: Patrick Stoebenau</p>
+          <p>Email: <a href="mailto:pstoebenau@knights.ucf.edu">pstoebenau@knights.ucf.edu</a></p>
+          <p>Phone: <a href="tel:+1-407-406-7925">(407)-406-7925</a></p>
+          <p>Github: <a href="https://github.com/pstoebenau">github.com/pstoebenau</a></p>
+          <p>Gitlab: <a href="https://gitlab.com/pstoebenau">gitlab.com/pstoebenau</a></p>
+          <p>Resume: <a href="https://resume.pstoebenau.ml">resume.pstoebenau.ml</a></p>
+        </div>
+      </div>
+      <form id="contact-form">
+        <label for="fname" required>First Name *</label>
+        <input type="text" required id="fname" name="entry.146756468" placeholder="John">
+        <label for="lname">Last Name *</label>
+        <input type="text" required id="lname" name="entry.1565109759" placeholder="Watson">
+        <label for="email">Email *</label>
+        <input type="email" required name="entry.1112572281" placeholder="jwatson@example.com">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="entry.587981600" placeholder="555-555-5555">
+        <label for="feedback">Contact Reason *</label>
+        <textarea required name="entry.1138540646"></textarea>
+        <input type="submit" name="submit" value="Submit">
+      </form>
     </div>
-    <form id="contact-form">
-      
-    </form>
   </section>
   <script src="js/index.js"></script>
 </body>

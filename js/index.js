@@ -27,6 +27,8 @@ const websites = [
   },
 ];
 
+document.getElementById("contact-form").addEventListener("submit", (e) => sendForm(e))
+
 function main() {
   createWebsitePreviews();
 }
@@ -46,6 +48,19 @@ function createWebsitePreviews() {
     websiteImage = websiteLink.getElementsByTagName("img")[0];
     websiteImage.src = websites[i].img;
   }
+}
+
+async function sendForm(e) {
+  e.preventDefault();
+  let formdata = new FormData(e.target);
+  let response = await fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfI21IUv8qtKSYvxYLNLIW8nvPxpMPbzqtw_K0OhUn0hvtC2w/formResponse", {
+    method: "POST",
+    mode: "no-cors",
+    body: formdata,
+  });
+
+  alert("Form sent");
+  e.target.reset();
 }
 
 main();
