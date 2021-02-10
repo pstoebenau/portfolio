@@ -11,12 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navbar">
+  <template id="navbar-template">
     <a href="#landing">Home</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
-    <a href="resume.pstoebenau.ml">Resume</a>
-  </div>
+    <a href="https://resume.pstoebenau.ml">Resume</a>
+  </template>
+  <div class="navbar"></div>
   <section id="landing">
     <p id="big-name">PATRICK STOEBENAU</p>
     <p id="work-title">Full Stack Web Developer</p>
@@ -24,12 +25,7 @@
   </section>
   <div id="navbar-sticky">
     <div class="navbar-background"></div>
-    <div class="navbar">
-      <a href="#landing">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="resume.pstoebenau.ml">Resume</a>
-    </div>
+    <div class="navbar"></div>
   </div>
   <section id="tech">
     <img src="img/logos/frameworks.png" alt="frameworks">

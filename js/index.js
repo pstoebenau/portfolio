@@ -6,11 +6,11 @@ const websites = [
     img: "img/websites/crownheritagelaw.jpg"
   },
   {
-    url: "https://technights-website.netlify.app/",
+    url: "https://knighthacks.org/",
     img: "img/websites/technightswebsite.jpg"
   },
   {
-    url: "https://bicbacboe.pstoebenau.ml/",
+    url: "https://bicbacboe.herokuapp.com/",
     img: "img/websites/bicbacboe.jpg"
   },
   {
@@ -30,7 +30,17 @@ const websites = [
 document.getElementById("contact-form").addEventListener("submit", (e) => sendForm(e))
 
 function main() {
+  replaceNavbars();
   createWebsitePreviews();
+}
+
+function replaceNavbars() {
+  const template = document.getElementById("navbar-template");
+
+  for (let navbar of document.querySelectorAll(".navbar")) {
+    const copy = template.content.cloneNode(true);
+    navbar.appendChild(copy);
+  }
 }
 
 function createWebsitePreviews() {
@@ -52,11 +62,11 @@ function createWebsitePreviews() {
 
 async function sendForm(e) {
   e.preventDefault();
-  let formdata = new FormData(e.target);
+  let formData = new FormData(e.target);
   let response = await fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfI21IUv8qtKSYvxYLNLIW8nvPxpMPbzqtw_K0OhUn0hvtC2w/formResponse", {
     method: "POST",
     mode: "no-cors",
-    body: formdata,
+    body: formData,
   });
 
   alert("Form sent");
