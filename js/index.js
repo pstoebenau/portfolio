@@ -10,7 +10,7 @@ const websites = [
     img: "img/websites/technightswebsite.jpg"
   },
   {
-    url: "https://bicbacboe.herokuapp.com/",
+    url: "https://bicbacboe.pstoebenau.tk/",
     img: "img/websites/bicbacboe.jpg"
   },
   {
@@ -22,7 +22,7 @@ const websites = [
     img: "img/websites/4dproj.jpg"
   },
   {
-    url: "https://nnmnist.pstoebenau.ml",
+    url: "https://nnmnist.pstoebenau.tk",
     img: "img/websites/nnmnist.jpg"
   },
 ];
