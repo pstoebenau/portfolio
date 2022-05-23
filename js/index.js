@@ -2,28 +2,52 @@ const workSection = document.getElementById("work");
 
 const websites = [
   {
+    url: "https://chillchili.netlify.app",
+    img: "img/websites/chillchili.jpg"
+  },
+  {
+    url: "http://evader.pstoebenau.ml/",
+    img: "img/websites/evader.png"
+  },
+  {
+    url: "https://bicbacboe.pstoebenau.ml/",
+    img: "img/websites/bicbacboe.jpg"
+  },
+  {
     url: "https://crownheritagelaw.com",
     img: "img/websites/crownheritagelaw.jpg"
   },
   {
-    url: "https://knighthacks.org/",
+    url: "https://techknights.pstoebenau.ml/",
     img: "img/websites/technightswebsite.jpg"
   },
   {
-    url: "https://bicbacboe.pstoebenau.tk/",
-    img: "img/websites/bicbacboe.jpg"
-  },
-  {
-    url: "https://polynomial-regression-nn.netlify.app/",
+    url: "https://polynn.pstoebenau.ml",
     img: "img/websites/polyregnn.jpg"
   },
   {
-    url: "https://4d-projection.netlify.app/",
+    url: "https://4dprojection.pstoebenau.ml/",
     img: "img/websites/4dproj.jpg"
   },
   {
-    url: "https://nnmnist.pstoebenau.tk",
+    url: "https://nnmnist.pstoebenau.ml",
     img: "img/websites/nnmnist.jpg"
+  },
+  {
+    url: "http://trader.ml/",
+    img: "img/websites/trader.jpg"
+  },
+  {
+    url: "http://writing.pstoebenau.ml/",
+    img: "img/websites/writing.jpg"
+  },
+  {
+    url: "http://resume.pstoebenau.ml/",
+    img: "img/websites/resume.jpg"
+  },
+  {
+    url: "http://epic.pstoebenau.ml/",
+    img: "img/websites/old.jpg"
   },
 ];
 
@@ -55,6 +79,7 @@ function createWebsitePreviews() {
   for(let i in websites) {
     websiteLink = websitePreviews[i].getElementsByTagName("a")[0];
     websiteLink.href = websites[i].url;
+    websiteLink.setAttribute('target', '_blank');
     websiteImage = websiteLink.getElementsByTagName("img")[0];
     websiteImage.src = websites[i].img;
   }
