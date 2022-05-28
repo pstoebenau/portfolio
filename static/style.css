@@ -1,0 +1,24 @@
+html,
+body {
+  background-color: #f7ece1;
+  color: #111;
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 12px;
+}
+
+form textarea {
+  height: 200px;
+  padding: 10px 12px;
+}
