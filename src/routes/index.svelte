@@ -1,10 +1,9 @@
-<NavBar/>
+<!-- <NavBar/>
 <section id="landing">
-  <p id="big-name">PATRICK STOEBENAU</p>
+  <p id="big-name">PATRICK R STOEBENAU</p>
   <p id="work-title">Full Stack Web Developer</p>
-  <!-- <img class="background" src="img/stars.jpg" alt="stars"> -->
-</section>
-<section>
+</section> -->
+<section style="height: 100vh;">
   <Backdrop3D/>
 </section>
 <NavBarSticky/>
