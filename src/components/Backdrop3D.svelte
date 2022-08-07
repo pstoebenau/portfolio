@@ -42,12 +42,12 @@
   <SC.PointLight intensity={1} position={[x, y, z]} />
 </SC.Canvas>
 
-<div class="controls">
+<!-- <div class="controls">
   <div>Light Controls</div>
   <label><input type="range" bind:value={x} min={-5} max={5} step={0.1} /> x <span>{x}</span></label>
   <label><input type="range" bind:value={y} min={-5} max={5} step={0.1} /> y <span>{y}</span></label>
   <label><input type="range" bind:value={z} min={-5} max={5} step={0.1} /> z <span>{z}</span></label>
-</div>
+</div> -->
 
 <style>
   .controls {
