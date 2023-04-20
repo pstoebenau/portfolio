@@ -1,3 +1,73 @@
+<script lang="ts">
+  import NavBar from '../components/NavBar.svelte';
+  import NavBarSticky from '../components/NavBarSticky.svelte';
+  import WebsitePreview from '../components/WebsitePreview.svelte';
+  import Backdrop3D from '../components/Backdrop3D.svelte';
+	import Loader from '../components/Loader..svelte';
+
+  const websites = [
+   {
+     url: "https://chillchili.netlify.app",
+     img: "img/websites/chillchili.jpg"
+   },
+   {
+     url: "http://evader.pstoebenau.ml/",
+     img: "img/websites/evader.png"
+   },
+   {
+     url: "https://bicbacboe.pstoebenau.ml/",
+     img: "img/websites/bicbacboe.jpg"
+   },
+   {
+     url: "https://leech.pstoebenau.ml/",
+     img: "img/websites/leech.png"
+   },
+   {
+     url: "https://crownheritagelaw.com",
+     img: "img/websites/crownheritagelaw.jpg"
+   },
+   {
+     url: "https://techknights.pstoebenau.ml/",
+     img: "img/websites/technightswebsite.jpg"
+   },
+   {
+     url: "https://polynn.pstoebenau.ml",
+     img: "img/websites/polyregnn.jpg"
+   },
+   {
+     url: "https://4dprojection.pstoebenau.ml/",
+     img: "img/websites/4dproj.jpg"
+   },
+   {
+     url: "https://nnmnist.pstoebenau.ml",
+     img: "img/websites/nnmnist.jpg"
+   },
+   {
+     url: "http://trader.ml/",
+     img: "img/websites/trader.jpg"
+   },
+   {
+     url: "http://writing.pstoebenau.ml/",
+     img: "img/websites/writing.jpg"
+   },
+   {
+     url: "http://resume.pstoebenau.ml/",
+     img: "img/websites/resume.jpg"
+   },
+   {
+     url: "http://epic.pstoebenau.ml/",
+     img: "img/websites/old.jpg"
+   },
+ ];
+
+ let loaded = false;
+</script>
+
+
+{#if !loaded}
+ <Loader />
+{/if}
+
 <NavBar/>
 <section id="landing">
   <p id="big-name">PATRICK STOEBENAU</p>
@@ -5,7 +75,7 @@
   <!-- <img class="background" src="img/stars.jpg" alt="stars"> -->
 </section>
 <section>
-  <Backdrop3D/>
+  <Backdrop3D bind:loaded={loaded}/>
 </section>
 <NavBarSticky/>
 <section id="tech">
@@ -36,7 +106,7 @@
       </div>
     </div>
     <form id="contact-form">
-      <label for="fname" required>First Name *</label>
+      <label for="fname">First Name *</label>
       <input type="text" required name="entry.146756468" placeholder="John">
       <label for="lname">Last Name *</label>
       <input type="text" required name="entry.1565109759" placeholder="Watson">
@@ -50,68 +120,6 @@
     </form>
   </div>
 </section>
-
-<script lang="ts">
-   import NavBar from '../components/NavBar.svelte';
-   import NavBarSticky from '../components/NavBarSticky.svelte';
-   import WebsitePreview from '../components/WebsitePreview.svelte';
-   import Backdrop3D from '../components/Backdrop3D.svelte';
-
-   const websites = [
-    {
-      url: "https://chillchili.netlify.app",
-      img: "img/websites/chillchili.jpg"
-    },
-    {
-      url: "http://evader.pstoebenau.ml/",
-      img: "img/websites/evader.png"
-    },
-    {
-      url: "https://bicbacboe.pstoebenau.ml/",
-      img: "img/websites/bicbacboe.jpg"
-    },
-    {
-      url: "https://leech.pstoebenau.ml/",
-      img: "img/websites/leech.png"
-    },
-    {
-      url: "https://crownheritagelaw.com",
-      img: "img/websites/crownheritagelaw.jpg"
-    },
-    {
-      url: "https://techknights.pstoebenau.ml/",
-      img: "img/websites/technightswebsite.jpg"
-    },
-    {
-      url: "https://polynn.pstoebenau.ml",
-      img: "img/websites/polyregnn.jpg"
-    },
-    {
-      url: "https://4dprojection.pstoebenau.ml/",
-      img: "img/websites/4dproj.jpg"
-    },
-    {
-      url: "https://nnmnist.pstoebenau.ml",
-      img: "img/websites/nnmnist.jpg"
-    },
-    {
-      url: "http://trader.ml/",
-      img: "img/websites/trader.jpg"
-    },
-    {
-      url: "http://writing.pstoebenau.ml/",
-      img: "img/websites/writing.jpg"
-    },
-    {
-      url: "http://resume.pstoebenau.ml/",
-      img: "img/websites/resume.jpg"
-    },
-    {
-      url: "http://epic.pstoebenau.ml/",
-      img: "img/websites/old.jpg"
-    },
-  ];
-</script>
 
 <style lang="scss">
 $navbarHeight: 100px;

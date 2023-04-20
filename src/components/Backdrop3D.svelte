@@ -5,7 +5,14 @@
   import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
   import { onMount } from 'svelte';
 
+	export let loaded = false;
   let showcaseMesh: THREE.BufferGeometry;
+
+	let camPos = [-1, .3, 0];
+	let lookAt = [0.4, 0, 0.1];
+	let angle = 45;
+	const speed = 0.1;
+	const radius = 1;
 
   let x: number = 0;
   let y: number = 0;
@@ -13,6 +20,8 @@
   
   onMount(async () => {
     showcaseMesh = await extractMesh('models/dyno_tex.obj');
+		loaded = true;
+		orbitCamera();
 	});
 
   async function extractMesh(path: string) {
@@ -21,6 +30,15 @@
     const mesh = loadedData.children[0] as THREE.Mesh;
     return mesh.geometry;
   }
+
+	function orbitCamera() {
+		angle += speed;
+		const rad = angle * 2 * Math.PI / 180;
+		const x = lookAt[0] + radius * Math.cos(rad);
+		const z = lookAt[2] + radius * Math.sin(rad);
+		camPos = [x, camPos[1], z];
+		requestAnimationFrame(orbitCamera);
+	}
 </script>
 
 <SC.Canvas
@@ -36,7 +54,7 @@
 		castShadow
 	/>
 
-	<SC.PerspectiveCamera position={[-1, 0, 0]} />
+	<SC.PerspectiveCamera position={camPos} target={lookAt} />
 	<SC.OrbitControls enableZoom={false} maxPolarAngle={Math.PI * 0.51} />
 	<SC.AmbientLight intensity={0} />
   <SC.PointLight intensity={1} position={[x, y, z]} />
