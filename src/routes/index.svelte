@@ -11,15 +11,15 @@
      img: "img/websites/chillchili.jpg"
    },
    {
-     url: "http://evader.pstoebenau.ml/",
+     url: "http://evader.patrickstoebenau.com/",
      img: "img/websites/evader.png"
    },
    {
-     url: "https://bicbacboe.pstoebenau.ml/",
+     url: "https://bicbacboe.patrickstoebenau.com/",
      img: "img/websites/bicbacboe.jpg"
    },
    {
-     url: "https://leech.pstoebenau.ml/",
+     url: "https://leech.patrickstoebenau.com/",
      img: "img/websites/leech.png"
    },
    {
@@ -27,19 +27,19 @@
      img: "img/websites/crownheritagelaw.jpg"
    },
    {
-     url: "https://techknights.pstoebenau.ml/",
+     url: "https://techknights.patrickstoebenau.com/",
      img: "img/websites/technightswebsite.jpg"
    },
    {
-     url: "https://polynn.pstoebenau.ml",
+     url: "https://polynn.patrickstoebenau.com",
      img: "img/websites/polyregnn.jpg"
    },
    {
-     url: "https://4dprojection.pstoebenau.ml/",
+     url: "https://4dprojection.patrickstoebenau.com/",
      img: "img/websites/4dproj.jpg"
    },
    {
-     url: "https://nnmnist.pstoebenau.ml",
+     url: "https://nnmnist.patrickstoebenau.com",
      img: "img/websites/nnmnist.jpg"
    },
    {
@@ -47,15 +47,15 @@
      img: "img/websites/trader.jpg"
    },
    {
-     url: "http://writing.pstoebenau.ml/",
+     url: "http://writing.patrickstoebenau.com/",
      img: "img/websites/writing.jpg"
    },
    {
-     url: "http://resume.pstoebenau.ml/",
+     url: "http://resume.patrickstoebenau.com/",
      img: "img/websites/resume.jpg"
    },
    {
-     url: "http://epic.pstoebenau.ml/",
+     url: "http://epic.patrickstoebenau.com/",
      img: "img/websites/old.jpg"
    },
  ];
@@ -102,7 +102,7 @@
         <p>Phone: <a href="tel:+1-407-406-7925">(407)-406-7925</a></p>
         <p>Github: <a href="https://github.com/pstoebenau">github.com/pstoebenau</a></p>
         <p>Gitlab: <a href="https://gitlab.com/pstoebenau">gitlab.com/pstoebenau</a></p>
-        <p>Resume: <a href="https://resume.pstoebenau.ml">resume.pstoebenau.ml</a></p>
+        <p>Resume: <a href="https://resume.patrickstoebenau.com">resume.patrickstoebenau.com</a></p>
       </div>
     </div>
     <form id="contact-form">

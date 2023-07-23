@@ -2,7 +2,7 @@
   <a href="#landing">Home</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#contact">Contact</a>
-  <a href="https://resume.pstoebenau.ml">Resume</a>
+  <a href="https://resume.patrickstoebenau.com">Resume</a>
 </div>
 
 <style>
