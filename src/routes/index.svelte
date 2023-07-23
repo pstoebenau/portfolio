@@ -7,7 +7,7 @@
 
   const websites = [
    {
-     url: "https://chillchili.netlify.app",
+     url: "https://chillchili.patrickstoebenau.com",
      img: "img/websites/chillchili.jpg"
    },
    {
@@ -43,7 +43,7 @@
      img: "img/websites/nnmnist.jpg"
    },
    {
-     url: "http://trader.ml/",
+     url: "http://trader.patrickstoebenau.com/",
      img: "img/websites/trader.jpg"
    },
    {
