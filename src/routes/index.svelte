@@ -11,7 +11,7 @@
      img: "img/websites/chillchili.jpg"
    },
    {
-     url: "http://evader.patrickstoebenau.com/",
+     url: "https://evader.patrickstoebenau.com/",
      img: "img/websites/evader.png"
    },
    {
@@ -43,19 +43,19 @@
      img: "img/websites/nnmnist.jpg"
    },
    {
-     url: "http://trader.patrickstoebenau.com/",
+     url: "https://trader.patrickstoebenau.com/",
      img: "img/websites/trader.jpg"
    },
    {
-     url: "http://writing.patrickstoebenau.com/",
+     url: "https://writing.patrickstoebenau.com/",
      img: "img/websites/writing.jpg"
    },
    {
-     url: "http://resume.patrickstoebenau.com/",
+     url: "https://resume.patrickstoebenau.com/",
      img: "img/websites/resume.jpg"
    },
    {
-     url: "http://epic.patrickstoebenau.com/",
+     url: "https://epic.patrickstoebenau.com/",
      img: "img/websites/old.jpg"
    },
  ];
